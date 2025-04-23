@@ -240,7 +240,7 @@ class OmniVisionInference(OmniInference):
 
         
 def test_vision_infer():
-    client = OmniVisionInference()
+    client = OmniVisionInference(ckpt_dir="/share/nlp/tuwenming/models/gpt-omni/mini-omni2")
     client.warm_up()
     input_audio_path = './data/samples/vision_qa_audio.wav'
     input_image_path = './data/samples/vision_qa_image.jpg'
