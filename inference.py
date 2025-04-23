@@ -547,7 +547,7 @@ class OmniInference:
 def test_infer():
     device = "cuda:0"
     out_dir = f"./output/{get_time_str()}"
-    ckpt_dir = f"./checkpoint"
+    ckpt_dir = f"/share/nlp/tuwenming/models/gpt-omni/mini-omni2"
     if not os.path.exists(ckpt_dir):
         print(f"checkpoint directory {ckpt_dir} not found, downloading from huggingface")
         download_model(ckpt_dir)
